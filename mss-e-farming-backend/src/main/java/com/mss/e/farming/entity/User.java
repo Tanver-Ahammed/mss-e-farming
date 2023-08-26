@@ -1,4 +1,4 @@
-package com.mss.e.farming.entities;
+package com.mss.e.farming.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -42,6 +42,10 @@ public class User {
     private String address;
 
     private boolean isEnable;
+
+    private String verificationCode;
+
+    private String image;
 
     private String password;
 

@@ -1,6 +1,5 @@
-package com.mss.e.farming.entities;
+package com.mss.e.farming.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,24 +11,18 @@ import lombok.Setter;
  * ICT, MBSTU
  */
 
-@Entity
-@Table(name = "roles")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Role {
+public class RoleDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String name;
 
     private String description;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id_fk", referencedColumnName = "id")
-    private User user;
+    private UserDTO user;
 
 }
