@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private ModelMapper modelMapper;
 
-    @Value("    ${project.image}")
+    @Value("${project.image}")
     private String path;
 
     @Override

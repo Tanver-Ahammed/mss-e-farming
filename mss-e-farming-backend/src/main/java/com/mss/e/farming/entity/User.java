@@ -37,6 +37,8 @@ public class User {
 
     private short age;
 
+    private String occupation;
+
     private String designation;
 
     private String address;
